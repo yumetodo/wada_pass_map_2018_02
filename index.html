@@ -100,7 +100,7 @@ xhr.onreadystatechange = function(){
   var overlays = {'サンプル': sampleLayer };
   L.control.layers(baseLayers, overlays,{position:'topright',collapsed:false}).addTo(map);
 };
-xhr.open('GET', './sample1.geojson', true);
+xhr.open('GET', './map.geojson', true);
 xhr.send(null);
 </script>
 </body>
