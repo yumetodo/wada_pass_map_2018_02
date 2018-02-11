@@ -92,12 +92,12 @@ xhr.onreadystatechange = function(){
 
   // 中心位置設定
   var map = L.map('mapdiv', {
-    center: [36.102099,140.082239], zoom: 16, layers: [std,sampleLayer]
+    center: [35.668245, 139.211240], zoom: 13, layers: [std,sampleLayer]
   });
 
   L.control.scale({imperial: false}).addTo(map);
   var baseLayers = {"地理院タイル（標準地図）": std};
-  var overlays = {'サンプル': sampleLayer };
+  var overlays = {'移動経路': sampleLayer };
   L.control.layers(baseLayers, overlays,{position:'topright',collapsed:false}).addTo(map);
 };
 xhr.open('GET', './map.geojson', true);
